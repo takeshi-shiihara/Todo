@@ -7,15 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F650A10C27A27D730031B26C /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F650A10B27A27D730031B26C /* Color+Extension.swift */; };
+		F650A10E27A280030031B26C /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F650A10D27A280030031B26C /* UserView.swift */; };
+		F650A11027A3561A0031B26C /* TodoEntity+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F650A10F27A356190031B26C /* TodoEntity+Extension.swift */; };
+		F650A11227A362470031B26C /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F650A11127A362470031B26C /* CategoryView.swift */; };
+		F650A11727A441E10031B26C /* QuickNewTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F650A11627A441E10031B26C /* QuickNewTask.swift */; };
+		F650A11927A675E20031B26C /* TodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F650A11827A675E20031B26C /* TodoList.swift */; };
+		F6524C1127AC91950053A8A0 /* TodoDetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6524C1027AC91940053A8A0 /* TodoDetailRow.swift */; };
+		F6524C1327B369A80053A8A0 /* NewTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6524C1227B369A60053A8A0 /* NewTask.swift */; };
+		F6524C1527B47D4B0053A8A0 /* Binding+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6524C1427B47D4A0053A8A0 /* Binding+Extension.swift */; };
+		F6524C1727B774800053A8A0 /* EditTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6524C1627B7747E0053A8A0 /* EditTask.swift */; };
+		F6524C1927B930620053A8A0 /* TaskToday.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6524C1827B930620053A8A0 /* TaskToday.swift */; };
 		F6A34A25279C182100405D90 /* TodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A34A24279C182100405D90 /* TodoApp.swift */; };
 		F6A34A27279C182100405D90 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A34A26279C182100405D90 /* ContentView.swift */; };
 		F6A34A29279C182600405D90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6A34A28279C182600405D90 /* Assets.xcassets */; };
 		F6A34A2C279C182600405D90 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6A34A2B279C182600405D90 /* Preview Assets.xcassets */; };
 		F6A34A2E279C182600405D90 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A34A2D279C182600405D90 /* Persistence.swift */; };
 		F6A34A31279C182600405D90 /* Todo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F6A34A2F279C182600405D90 /* Todo.xcdatamodeld */; };
+		F6A34A38279C18F000405D90 /* CategoryImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A34A37279C18F000405D90 /* CategoryImage.swift */; };
+		F6A34A3A279CF47B00405D90 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A34A39279CF47A00405D90 /* CheckBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F650A10B27A27D730031B26C /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		F650A10D27A280030031B26C /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		F650A10F27A356190031B26C /* TodoEntity+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TodoEntity+Extension.swift"; sourceTree = "<group>"; };
+		F650A11127A362470031B26C /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		F650A11627A441E10031B26C /* QuickNewTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickNewTask.swift; sourceTree = "<group>"; };
+		F650A11827A675E20031B26C /* TodoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoList.swift; sourceTree = "<group>"; };
+		F6524C1027AC91940053A8A0 /* TodoDetailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailRow.swift; sourceTree = "<group>"; };
+		F6524C1227B369A60053A8A0 /* NewTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTask.swift; sourceTree = "<group>"; };
+		F6524C1427B47D4A0053A8A0 /* Binding+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+Extension.swift"; sourceTree = "<group>"; };
+		F6524C1627B7747E0053A8A0 /* EditTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTask.swift; sourceTree = "<group>"; };
+		F6524C1827B930620053A8A0 /* TaskToday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskToday.swift; sourceTree = "<group>"; };
 		F6A34A21279C182100405D90 /* Todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6A34A24279C182100405D90 /* TodoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoApp.swift; sourceTree = "<group>"; };
 		F6A34A26279C182100405D90 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -23,6 +47,8 @@
 		F6A34A2B279C182600405D90 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F6A34A2D279C182600405D90 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		F6A34A30279C182600405D90 /* Todo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Todo.xcdatamodel; sourceTree = "<group>"; };
+		F6A34A37279C18F000405D90 /* CategoryImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryImage.swift; sourceTree = "<group>"; };
+		F6A34A39279CF47A00405D90 /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +62,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F650A10A27A27CE30031B26C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F650A10B27A27D730031B26C /* Color+Extension.swift */,
+				F650A10F27A356190031B26C /* TodoEntity+Extension.swift */,
+				F6524C1427B47D4A0053A8A0 /* Binding+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		F6A34A18279C182000405D90 = {
 			isa = PBXGroup;
 			children = (
@@ -55,8 +91,19 @@
 		F6A34A23279C182100405D90 /* Todo */ = {
 			isa = PBXGroup;
 			children = (
+				F650A10A27A27CE30031B26C /* Extension */,
 				F6A34A24279C182100405D90 /* TodoApp.swift */,
 				F6A34A26279C182100405D90 /* ContentView.swift */,
+				F6A34A37279C18F000405D90 /* CategoryImage.swift */,
+				F6A34A39279CF47A00405D90 /* CheckBox.swift */,
+				F650A10D27A280030031B26C /* UserView.swift */,
+				F650A11127A362470031B26C /* CategoryView.swift */,
+				F650A11627A441E10031B26C /* QuickNewTask.swift */,
+				F650A11827A675E20031B26C /* TodoList.swift */,
+				F6524C1027AC91940053A8A0 /* TodoDetailRow.swift */,
+				F6524C1227B369A60053A8A0 /* NewTask.swift */,
+				F6524C1627B7747E0053A8A0 /* EditTask.swift */,
+				F6524C1827B930620053A8A0 /* TaskToday.swift */,
 				F6A34A28279C182600405D90 /* Assets.xcassets */,
 				F6A34A2D279C182600405D90 /* Persistence.swift */,
 				F6A34A2F279C182600405D90 /* Todo.xcdatamodeld */,
@@ -144,8 +191,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6A34A2E279C182600405D90 /* Persistence.swift in Sources */,
+				F650A11727A441E10031B26C /* QuickNewTask.swift in Sources */,
+				F6524C1727B774800053A8A0 /* EditTask.swift in Sources */,
+				F650A10C27A27D730031B26C /* Color+Extension.swift in Sources */,
+				F650A11927A675E20031B26C /* TodoList.swift in Sources */,
+				F6524C1527B47D4B0053A8A0 /* Binding+Extension.swift in Sources */,
 				F6A34A27279C182100405D90 /* ContentView.swift in Sources */,
+				F6524C1927B930620053A8A0 /* TaskToday.swift in Sources */,
+				F650A10E27A280030031B26C /* UserView.swift in Sources */,
+				F650A11227A362470031B26C /* CategoryView.swift in Sources */,
+				F6A34A3A279CF47B00405D90 /* CheckBox.swift in Sources */,
 				F6A34A25279C182100405D90 /* TodoApp.swift in Sources */,
+				F6524C1327B369A80053A8A0 /* NewTask.swift in Sources */,
+				F6A34A38279C18F000405D90 /* CategoryImage.swift in Sources */,
+				F6524C1127AC91950053A8A0 /* TodoDetailRow.swift in Sources */,
+				F650A11027A3561A0031B26C /* TodoEntity+Extension.swift in Sources */,
 				F6A34A31279C182600405D90 /* Todo.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +343,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -312,6 +373,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
