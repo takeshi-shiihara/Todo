@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F60A9D7327BA09910059CFEA /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60A9D7227BA09910059CFEA /* Date+Extension.swift */; };
 		F650A10C27A27D730031B26C /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F650A10B27A27D730031B26C /* Color+Extension.swift */; };
 		F650A10E27A280030031B26C /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F650A10D27A280030031B26C /* UserView.swift */; };
 		F650A11027A3561A0031B26C /* TodoEntity+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F650A10F27A356190031B26C /* TodoEntity+Extension.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F60A9D7227BA09910059CFEA /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		F650A10B27A27D730031B26C /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		F650A10D27A280030031B26C /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		F650A10F27A356190031B26C /* TodoEntity+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TodoEntity+Extension.swift"; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				F650A10B27A27D730031B26C /* Color+Extension.swift */,
 				F650A10F27A356190031B26C /* TodoEntity+Extension.swift */,
 				F6524C1427B47D4A0053A8A0 /* Binding+Extension.swift */,
+				F60A9D7227BA09910059CFEA /* Date+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				F6524C1127AC91950053A8A0 /* TodoDetailRow.swift in Sources */,
 				F650A11027A3561A0031B26C /* TodoEntity+Extension.swift in Sources */,
 				F6A34A31279C182600405D90 /* Todo.xcdatamodeld in Sources */,
+				F60A9D7327BA09910059CFEA /* Date+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
