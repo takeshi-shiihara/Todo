@@ -17,7 +17,6 @@ struct TodoApp: App {
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
-    
 }
 
 

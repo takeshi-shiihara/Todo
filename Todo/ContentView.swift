@@ -27,6 +27,7 @@ struct ContentView: View {
                     CategoryView(category: .NimpNUrg_4th)
                 }
             }.padding()
+            TaskToday()
         }.background(Color.tBackground)
             .edgesIgnoringSafeArea(.bottom)
     }

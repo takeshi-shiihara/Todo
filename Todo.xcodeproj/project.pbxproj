@@ -19,6 +19,7 @@
 		F6524C1527B47D4B0053A8A0 /* Binding+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6524C1427B47D4A0053A8A0 /* Binding+Extension.swift */; };
 		F6524C1727B774800053A8A0 /* EditTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6524C1627B7747E0053A8A0 /* EditTask.swift */; };
 		F6524C1927B930620053A8A0 /* TaskToday.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6524C1827B930620053A8A0 /* TaskToday.swift */; };
+		F652909727BF4FC500EF9811 /* RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = F652909627BF4FC500EF9811 /* RoundedCorners.swift */; };
 		F6A34A25279C182100405D90 /* TodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A34A24279C182100405D90 /* TodoApp.swift */; };
 		F6A34A27279C182100405D90 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A34A26279C182100405D90 /* ContentView.swift */; };
 		F6A34A29279C182600405D90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6A34A28279C182600405D90 /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 		F6524C1427B47D4A0053A8A0 /* Binding+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+Extension.swift"; sourceTree = "<group>"; };
 		F6524C1627B7747E0053A8A0 /* EditTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTask.swift; sourceTree = "<group>"; };
 		F6524C1827B930620053A8A0 /* TaskToday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskToday.swift; sourceTree = "<group>"; };
+		F652909627BF4FC500EF9811 /* RoundedCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorners.swift; sourceTree = "<group>"; };
 		F6A34A21279C182100405D90 /* Todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6A34A24279C182100405D90 /* TodoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoApp.swift; sourceTree = "<group>"; };
 		F6A34A26279C182100405D90 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				F6524C1227B369A60053A8A0 /* NewTask.swift */,
 				F6524C1627B7747E0053A8A0 /* EditTask.swift */,
 				F6524C1827B930620053A8A0 /* TaskToday.swift */,
+				F652909627BF4FC500EF9811 /* RoundedCorners.swift */,
 				F6A34A28279C182600405D90 /* Assets.xcassets */,
 				F6A34A2D279C182600405D90 /* Persistence.swift */,
 				F6A34A2F279C182600405D90 /* Todo.xcdatamodeld */,
@@ -209,6 +212,7 @@
 				F6A34A38279C18F000405D90 /* CategoryImage.swift in Sources */,
 				F6524C1127AC91950053A8A0 /* TodoDetailRow.swift in Sources */,
 				F650A11027A3561A0031B26C /* TodoEntity+Extension.swift in Sources */,
+				F652909727BF4FC500EF9811 /* RoundedCorners.swift in Sources */,
 				F6A34A31279C182600405D90 /* Todo.xcdatamodeld in Sources */,
 				F60A9D7327BA09910059CFEA /* Date+Extension.swift in Sources */,
 			);
@@ -326,6 +330,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -355,7 +360,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.Todo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shiihara.Todo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -385,7 +390,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.Todo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shiihara.Todo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
