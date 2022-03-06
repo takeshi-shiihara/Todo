@@ -31,10 +31,10 @@ struct EditTask: View {
     
     var body: some View {
             Form {
-                Section(header: Text("タスク")) {
+                Section(header: Text("タスク").foregroundColor(.secondary)) {
                     TextField("タスクを入力", text: Binding($todo.task,"newTask"))
                 }
-                Section(header: Toggle(isOn: Binding(isNotNil: $todo.time, defaultValue: Date())){Text("時間")}) {
+                Section(header: Toggle(isOn: Binding(isNotNil: $todo.time, defaultValue: Date())){Text("時間").foregroundColor(.secondary)}) {
                     if todo.time != nil {
                         DatePicker("日時", selection: Binding($todo.time, Date()))
                     } else {
@@ -42,17 +42,17 @@ struct EditTask: View {
                             .foregroundColor(.secondary)
                     }
                 }
-                Picker("種類", selection: $todo.category) {
+                Picker(selection: $todo.category, label: Text("種類").foregroundColor(.primary)) {
                     ForEach(categories, id: \.self) {category in
                         HStack {
                             CategoryImage(category)
                             Text(category.toString())
+                                .foregroundColor(.secondary)
                         }.tag(category.rawValue)
-                        
                     }
                 }
                 
-                Section(header: Text("操作")) {
+                Section(header: Text("操作").foregroundColor(.secondary)) {
                     Button(action: {
                         self.showingSheet = true
                     }) {
@@ -67,7 +67,8 @@ struct EditTask: View {
                     self.save()
                     self.presentationMode.wrappedValue.dismiss()
                 }) {
-                    Text("閉じる")
+                    Text("編集")
+                        .foregroundColor(.blue)
                 })
                 .actionSheet(isPresented: $showingSheet) {
                     ActionSheet(title: Text("タスクの削除"), message: Text("このタスクを削除します。よろしいですか？"), buttons: [

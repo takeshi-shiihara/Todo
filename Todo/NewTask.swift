@@ -28,10 +28,10 @@
         var body: some View {
             NavigationView {
                 Form {
-                    Section(header: Text("タスク")) {
-                        TextField("タスクを入力", text: $task)
+                    Section(header: Text("タスク").foregroundColor(.secondary)) {
+                        TextField("タスクを入力", text: $task).foregroundColor(.primary)
                     }
-                    Section(header: Toggle(isOn: Binding(isNotNil: $time, defaultValue: Date())){Text("時間")}) {
+                    Section(header: Toggle(isOn: Binding(isNotNil: $time, defaultValue: Date())){Text("時間").foregroundColor(.secondary)}) {
                         if time != nil {
                         DatePicker("日時", selection: Binding($time, Date()))
                         } else {
@@ -49,7 +49,7 @@
                         }
                     }
                     
-                    Section(header: Text("操作")) {
+                    Section(header: Text("操作").foregroundColor(.secondary)) {
                         Button(action: {
                             self.presentationMode.wrappedValue.dismiss()
                         }) {
@@ -69,6 +69,7 @@
                         self.presentationMode.wrappedValue.dismiss()
                     }) {
                         Text("保存")
+                            .foregroundColor(.blue)
                     })
             }
         }
