@@ -15,19 +15,38 @@ struct TodoList: View {
     
     var todoList: FetchedResults<TodoEntity>
     
+    @Environment(\.managedObjectContext) var viewContext
+    
+    fileprivate func deleteTodo(at offsets: IndexSet) {
+        for index in offsets {
+            let entity = todoList[index]
+            viewContext.delete(entity)
+        }
+        do {
+            try viewContext.save()
+        } catch {
+            print("Delete Erorr. \(offsets)")
+        }
+    }
+    
     let category: TodoEntity.Category
     
     var body: some View {
-        VStack {
-            List {
-                ForEach(todoList) { todo in
-                    if todo.category == self.category.rawValue {
-                        TodoDetailRow(todo: todo, hideIcon: true)
-                    }
+        NavigationView {
+            VStack {
+                List {
+                    ForEach(todoList) { todo in
+                        if todo.category == self.category.rawValue {
+                            NavigationLink(destination: EditTask(todo: todo)) {
+                                TodoDetailRow(todo: todo, hideIcon: true)
+                            }
+                        }
+                    }.onDelete(perform: deleteTodo)
                 }
-            }
-            QuickNewTask(category: category)
-                .padding()
+                QuickNewTask(category: category)
+                    .padding()
+            }.navigationBarTitle(category.toString())
+                .navigationBarItems(trailing: EditButton())
         }
     }
 }
@@ -52,7 +71,7 @@ struct TodoList_Previews: PreviewProvider {
                           category: .ImpUrg_1st, task: "炎上プロジェクション")
         
         TodoEntity.create(in: context,
-                          category: .ImpNUrg_2nd, task: "２")
+                          category: .ImpNUrg_2nd, task: "")
         
         TodoEntity.create(in: context,
                           category: .NImpUrg_3rd, task: "３")
