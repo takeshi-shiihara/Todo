@@ -50,13 +50,13 @@ struct TodoList: View {
             }.navigationBarTitle(category.toString())
                 .navigationBarItems(trailing: EditButton())
         }
-//        .onAppear{
-//            self.keyboard.startObserve()
-//         UIApplication.shared.closeKeyboard()
-//        }.onDisappear{
-//            self.keyboard.stopObserve()
-//            UIApplication.shared.closeKeyboard()
-//        }.padding(.bottom, keyboard.keyboardHeight)
+        .onAppear{
+            self.keyboard.startObserve()
+         UIApplication.shared.closeKeyboard()
+        }.onDisappear{
+            self.keyboard.stopObserve()
+            UIApplication.shared.closeKeyboard()
+        }//.padding(.bottom, keyboard.keyboardHeight)
     }
 }
 
