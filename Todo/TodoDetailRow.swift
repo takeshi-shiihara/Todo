@@ -51,7 +51,7 @@ struct TodoDetailRow_Previews: PreviewProvider {
         let newTodo = TodoEntity(context: context)
         
         newTodo.task = "おい！ふざけ倒せよ〜"
-        newTodo.state = TodoEntity.State.done.rawValue
+        newTodo.state = TodoEntity.State.todo.rawValue
         newTodo.category = 0
         
         let newTodo1 = TodoEntity(context: context)
