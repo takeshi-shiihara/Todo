@@ -20,10 +20,10 @@ struct CategoryImage: View {
             .resizable()
             .scaledToFit()
             .foregroundColor(.white)
-            .padding(10.0)
-            .frame(width: 40, height: 40)
+            .padding(2.0)
+            .frame(width: 30, height: 30)
             .background(category.color())
-            .cornerRadius(10)
+            .cornerRadius(6.0)
             
     }
 }
