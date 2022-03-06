@@ -39,11 +39,12 @@
                                 .foregroundColor(.secondary)
                         }
                     }
-                    Picker("種類", selection: $category) {
+                    Picker(selection: $category, label: Text("種類").foregroundColor(.primary)) {
                         ForEach(categories, id: \.self) {category in
                             HStack {
                                 CategoryImage(category)
                                 Text(category.toString())
+                                    .foregroundColor(.secondary)
                             }.tag(category.rawValue)
                             
                         }
