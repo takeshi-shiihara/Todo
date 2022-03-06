@@ -33,6 +33,7 @@ struct EditTask: View {
             Form {
                 Section(header: Text("タスク").foregroundColor(.secondary)) {
                     TextField("タスクを入力", text: Binding($todo.task,"newTask"))
+                        .foregroundColor(.primary)
                 }
                 Section(header: Toggle(isOn: Binding(isNotNil: $todo.time, defaultValue: Date())){Text("時間").foregroundColor(.secondary)}) {
                     if todo.time != nil {
