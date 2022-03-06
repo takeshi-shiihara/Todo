@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		F60A9D7327BA09910059CFEA /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60A9D7227BA09910059CFEA /* Date+Extension.swift */; };
+		F641332327D47D110034191C /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F641332227D47D110034191C /* KeyboardObserver.swift */; };
+		F641332527D483370034191C /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F641332427D483370034191C /* UIApplication+Extension.swift */; };
 		F650A10C27A27D730031B26C /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F650A10B27A27D730031B26C /* Color+Extension.swift */; };
 		F650A10E27A280030031B26C /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F650A10D27A280030031B26C /* UserView.swift */; };
 		F650A11027A3561A0031B26C /* TodoEntity+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F650A10F27A356190031B26C /* TodoEntity+Extension.swift */; };
@@ -32,6 +34,8 @@
 
 /* Begin PBXFileReference section */
 		F60A9D7227BA09910059CFEA /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		F641332227D47D110034191C /* KeyboardObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardObserver.swift; sourceTree = "<group>"; };
+		F641332427D483370034191C /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
 		F650A10B27A27D730031B26C /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		F650A10D27A280030031B26C /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		F650A10F27A356190031B26C /* TodoEntity+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TodoEntity+Extension.swift"; sourceTree = "<group>"; };
@@ -73,6 +77,7 @@
 				F650A10F27A356190031B26C /* TodoEntity+Extension.swift */,
 				F6524C1427B47D4A0053A8A0 /* Binding+Extension.swift */,
 				F60A9D7227BA09910059CFEA /* Date+Extension.swift */,
+				F641332427D483370034191C /* UIApplication+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -110,6 +115,7 @@
 				F6524C1627B7747E0053A8A0 /* EditTask.swift */,
 				F6524C1827B930620053A8A0 /* TaskToday.swift */,
 				F652909627BF4FC500EF9811 /* RoundedCorners.swift */,
+				F641332227D47D110034191C /* KeyboardObserver.swift */,
 				F6A34A28279C182600405D90 /* Assets.xcassets */,
 				F6A34A2D279C182600405D90 /* Persistence.swift */,
 				F6A34A2F279C182600405D90 /* Todo.xcdatamodeld */,
@@ -206,8 +212,10 @@
 				F6524C1927B930620053A8A0 /* TaskToday.swift in Sources */,
 				F650A10E27A280030031B26C /* UserView.swift in Sources */,
 				F650A11227A362470031B26C /* CategoryView.swift in Sources */,
+				F641332327D47D110034191C /* KeyboardObserver.swift in Sources */,
 				F6A34A3A279CF47B00405D90 /* CheckBox.swift in Sources */,
 				F6A34A25279C182100405D90 /* TodoApp.swift in Sources */,
+				F641332527D483370034191C /* UIApplication+Extension.swift in Sources */,
 				F6524C1327B369A80053A8A0 /* NewTask.swift in Sources */,
 				F6A34A38279C18F000405D90 /* CategoryImage.swift in Sources */,
 				F6524C1127AC91950053A8A0 /* TodoDetailRow.swift in Sources */,
