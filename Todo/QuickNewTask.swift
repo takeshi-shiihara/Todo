@@ -29,6 +29,7 @@ struct QuickNewTask: View {
                 self.addNewTask()
             }
                 .textFieldStyle(RoundedBorderTextFieldStyle())
+                .foregroundColor(.primary)
             Button(action: {addNewTask()}) {
                 Text("追加")
                     .foregroundColor(.blue)
