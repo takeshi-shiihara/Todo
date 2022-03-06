@@ -31,6 +31,7 @@ struct QuickNewTask: View {
                 .textFieldStyle(RoundedBorderTextFieldStyle())
             Button(action: {addNewTask()}) {
                 Text("追加")
+                    .foregroundColor(.blue)
             }
             Button(action: {cancelTask()}) {
                 Text("Cancel")
