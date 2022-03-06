@@ -13,6 +13,7 @@ struct CategoryView: View {
     @State var showList = false
     @Environment(\.managedObjectContext) var viewContext
     @State var addNewTask = false
+    
     var body: some View {
         VStack(alignment: .leading) {
                 Image(systemName: category.image())
@@ -42,6 +43,9 @@ struct CategoryView: View {
         .cornerRadius(20)
         .onTapGesture {
             self.showList = true
+        }
+        .onAppear {
+            self.numberOfTask = TodoEntity.count(in: self.viewContext, category: self.category)
         }
     }
 }
