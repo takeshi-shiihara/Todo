@@ -8,6 +8,7 @@
     import SwiftUI
 
     struct NewTask: View {
+        @State var showingAlert = false
         @State var task: String = ""
         @State var time: Date? = Date()
         @State var category: Int16 = TodoEntity.Category.ImpUrg_1st.rawValue
@@ -61,17 +62,24 @@
                         }
                     }
                 }.navigationBarTitle("タスクの追加")
-                    .navigationBarItems(trailing: Button(action: {
+                    .navigationBarItems(trailing: Button(
+                        action: {
+                            if self.task.isEmpty {
+                                self.showingAlert = true
+                            } else {
                         TodoEntity.create(in: self.viewContext,
                                           category: TodoEntity.Category(rawValue: self.category) ?? .ImpUrg_1st,
                                           task: self.task,
                                           time: self.time)
                         self.save()
                         self.presentationMode.wrappedValue.dismiss()
-                    }) {
+                            }}) {
                         Text("保存")
                             .foregroundColor(.blue)
                     })
+                    .alert(isPresented: $showingAlert) {
+                        Alert(title: Text("タスクが空です"))
+                    }
             }
         }
     }
